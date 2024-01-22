@@ -1,0 +1,597 @@
+
+
+/*Codigos básicos*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-45deg,rgb(7, 55, 104), rgb(0, 0, 0));
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Final Codigo Basico*/
+
+
+/*Container de todas as telas*/
+.container {
+    background-color: white;
+    width: 350px;
+    height: 615px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;  
+}
+
+
+/*Codigos Tela Login*/
+.logo {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 40px 0;
+}
+
+.welcome {
+    margin-bottom: 5px;
+    background-color: #02234e; 
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.welcome-text {
+    color: #ffffff; 
+    font-weight: bold; 
+    font-size: 24px;
+}
+
+#email {
+    position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+#senha {
+    position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+.input-field {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.input-field input {
+    padding-right: 30px; 
+}
+
+.login-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    color: #02234e;
+    text-decoration: none;
+    padding: 10px 30px;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    right: 10px;
+}
+
+.signup-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    color: #02234e;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    right: -10px;
+}
+
+.login-text {
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+/*Final do Codigo da Tela Login */
+
+/*Codigo Tela Cadastro*/
+.tittle {
+    height: 40px;
+    width: 100%;
+    background-color: #02234e;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: large;
+}
+
+.logoUsuario {
+    margin: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-cadastro {
+    margin: 5px;
+    width: 250px;
+}
+
+.form-cadastro input, select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.button-cadastro, .button-voltar {
+    width: 120px;
+    margin: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #02234e; 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*Final do Codigo da Tela Cadastro */
+
+
+/* Começo tela de resumo */
+.perfil {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.saldo-container {
+    text-align: left;
+    margin-left: 35px;
+    color: #646464; 
+    font-size: 15px;
+    
+}
+
+
+.valor-container {
+    text-align: left;
+    margin-left: 35px;
+   
+}
+
+
+.valor-container input {
+    width: 187px; 
+    font-weight: bold; 
+    font-size: 26px;  
+    color:#636363;
+}
+
+.transacoes-container {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    color:#636363;
+    font-size: 15px;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.arrow-container div {
+    display: flex;
+    align-items: center;
+    
+}
+
+.arrow-container input {
+    width: 95px;
+    font-weight: bold;
+    font-size: 15px;
+    color:#636363;
+}
+
+.input-style {
+    width: 100px;
+}
+
+.center-align {
+    text-align: center;
+}
+
+#meses {
+    width: 90px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.arrow-green {
+    color: green;
+    font-size: 24px;
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.arrow-red {
+    transform: rotate(0deg);
+    color: red;
+    font-size: 24px;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.linhadivisao {
+    display: block;
+    margin: 20px 0; 
+    border-bottom: 1.5px solid #646464; 
+}
+
+.meus-botoes {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px; 
+}
+.meus-botoes img {
+    margin: 0 20px; 
+    margin-bottom: 2px;
+}
+
+
+.meus-botoes a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 0px; 
+    font-size: 7.5px;
+    font-weight: bold;
+}
+
+.meus-botoes img {
+    width: 25px; 
+    height: 25px;
+}
+
+.meus-botoes p {
+    padding: 10px; 
+}
+
+
+.resumo {
+    margin-bottom: 5px;
+    background-color: #02234e; 
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.resumo-text {
+    color: #ffffff; 
+    font-weight: bold; 
+    font-size: 24px;
+    padding: 10px;
+}
+
+.linhadivisao {
+    display: block;
+    margin: 20px 0; 
+    border-bottom: 1.5px solid #333333; 
+}
+
+.nomedousuario {
+    height: 60px;
+    width: 100%;
+    background-color: #02234e;
+    text-align: left;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nomedousuario p {
+    position: absolute;
+    padding: 3px;
+    color: white;
+    font-size: 26px;
+}
+
+/* final tela de resumo */
+
+
+/*Codigo Tela de Cadastro Recebimento*/
+.tittle-entidades{
+    height: 40px;
+    width: 100%;
+    background-color: #02234e;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: large;
+}
+
+.button-listagem {
+    position: absolute;
+    margin: 30px 200px;
+}
+
+.button-listagem a {
+    width: 100%;
+    margin: 0px 5px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #02234e; 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form-recebimento {
+    margin-top: 60px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-cadastro-recebimento {
+    margin: 20px;
+    width: 200px;
+}
+
+.form-cadastro-recebimento img {
+    height: 30px;
+    position: absolute;
+    right: 290px;
+}
+
+.form-cadastro-recebimento input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border-color: #02234e;
+    padding: 5px;
+}
+
+/*Final do Codigo da Tela Recebimento */
+
+
+/*Codigo Tela Listagem Recebimento*/
+.listagem-entidades {
+    background-color: #02234e; 
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.listagem-entidades p {
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+.meses {
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.valor-rec {
+    margin-top: 40px;
+    color: #ffffff;
+    font-weight: bold; 
+    font-size: 25px;
+}
+
+.lista-container {
+    margin-top: 10px;
+}
+
+.lista-container input {
+    width: 100px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #02234e; 
+}
+
+.list-recentes {
+    background-color: #02234e; 
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.list-recentes p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table, td{
+	margin: 5px;
+	font-size: 12px;
+	border: solid 1px
+}
+
+.cabecalho{
+	width: 20px;
+}
+
+.modal-footer, .modal-body, .modal-header, .modal-title{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; 
+}
+/*Final do Codigo da Tela de Listagem de Recebimento */
+
+/*Inicio do Cadastro de gasto */
+.form-listagem {
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+}
+
+.form-cadastro-gasto {
+    position: relative;
+    top: 20px;
+    right: -50px;
+    margin: 20px;
+    width: 250px ;
+}
+
+.form-cadastro-gasto img {
+    height: 30px;
+    position: absolute;
+    right: 255px;
+}
+
+.form-cadastro-gasto input, select {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border-color: #02234e;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* começo tela de cadastro investimento*/
+.form-cadastro-investimento {
+    position: relative;
+    top: 20px;
+    right: -50px;
+    margin: 20px;
+    width: 250px ;
+}
+
+.form-cadastro-investimento img {
+    height: 30px;
+    position: absolute;
+    right: 255px;
+}
+
+.form-cadastro-investimento input, select {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border-color: #02234e;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#tabela {
+    overflow-x: auto;
+}
+/* final tela de cadastro investimento */
+
+/* começo tela de cadastro objetivo financeiro*/
+.form-cadastro-objetivo {
+    position: relative;
+    top: 20px;
+    right: -50px;
+    margin: 20px;
+    width: 250px ;
+}
+
+.form-cadastro-objetivo img {
+    height: 30px;
+    position: absolute;
+    right: 255px;
+}
+
+.form-cadastro-objetivo input {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border-color: #02234e;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* fim tela de cadastro objetivo financeiro*/
+
+table th {
+    background-color: #02234e;
+    color: #ffffff;
+}
+
+.salvarEditar, .cancelarEditar{
+	padding: 10px;
+    background-color: #02234e;
+    color: #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100px;
+    margin: 5px;
+}
+
+.editar{
+	background-color: #02234e;
+	color: #ffffff;
+	padding: 1px 12px;
+}
+
+.excluir{
+	background-color: red;
+	color: #ffffff;
+}
